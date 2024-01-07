@@ -24,6 +24,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .card.hovercard {
   position: relative;
   padding-top: 0;
@@ -40,6 +41,7 @@
   margin: 0 auto;
   position: relative;
 }
+
 .body {
   width: 250px;
   height: 500px;
@@ -48,6 +50,7 @@
   top: 12%;
   left: 22%;
 }
+
 .bikinitop {
   width: 250px;
   height: 500px;
@@ -56,6 +59,12 @@
   top: 12%;
   left: 22%;
   z-index: 1;
+}
+
+.bikinitop img {
+  position: absolute;
+  width: 250px;
+  height: 500px;
 }
 
 .bikinibottom {
@@ -67,7 +76,11 @@
   left: 22%;
   z-index: 1;
 }
-
+.bikinibottom img {
+  position: absolute;
+  width: 250px;
+  height: 500px;
+}
 .model {
   width: 60px;
   height: 77px;
@@ -131,7 +144,11 @@
   transform: scale(0.5);
   z-index: -1;
 }
-
+.background img {
+  position: absolute;
+  width: 900px;
+  height: 1500px;
+}
 /* END MODEL */
 
 hr {
@@ -144,10 +161,12 @@ hr {
   width: 140px;
   text-align: center;
 }
+
 .nav-pills .nav-item .nav-link {
   border: 1px solid #ccc;
   border-radius: 0 !important;
 }
+
 .well {
   background-color: #eff1f1;
   height: 700px;

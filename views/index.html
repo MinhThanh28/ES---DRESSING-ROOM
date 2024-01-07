@@ -44,103 +44,159 @@
 
           <div class="well">
             <!-- Tab panes -->
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  id="ao-tab"
+                  data-toggle="tab"
+                  href="#ao"
+                  role="tab"
+                  aria-controls="ao"
+                  aria-selected="true"
+                  >Áo</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="quan-tab"
+                  data-toggle="tab"
+                  href="#quan"
+                  role="tab"
+                  aria-controls="quan"
+                  aria-selected="false"
+                  >Quần</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="giaydep-tab"
+                  data-toggle="tab"
+                  href="#giaydep"
+                  role="tab"
+                  aria-controls="giaydep"
+                  aria-selected="false"
+                  >Giày dép</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="tuixach-tab"
+                  data-toggle="tab"
+                  href="#tuixach"
+                  role="tab"
+                  aria-controls="tuixach"
+                  aria-selected="false"
+                  >Túi xách</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="daychuyen-tab"
+                  data-toggle="tab"
+                  href="#daychuyen"
+                  role="tab"daychuyen
+                  aria-controls="daychuyen"
+                  aria-selected="false"
+                  >Dây chuyền</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="kieutoc-tab"
+                  data-toggle="tab"
+                  href="#kieutoc"
+                  role="tab"
+                  aria-controls="kieutoc"
+                  aria-selected="false"
+                  >Kiểu tóc</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  id="nen-tab"
+                  data-toggle="tab"
+                  href="#nen"
+                  role="tab"
+                  aria-controls="nen"
+                  aria-selected="false"
+                  >Nền</a
+                >
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
             <div class="tab-content">
-              <ul class="nav nav-pills" id="myTab" role="tablist">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    id="ao-tab"
-                    data-toggle="tab"
-                    href="#ao"
-                    role="tab"
-                    aria-controls="ao"
-                    aria-selected="true"
-                    >Áo</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="quan-tab"
-                    data-toggle="tab"
-                    href="#quan"
-                    role="tab"
-                    aria-controls="quan"
-                    aria-selected="false"
-                    >Quần</a
-                  >
-                </li>
-                <!-- Thêm các tab khác tại đây -->
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="giaydep-tab"
-                    data-toggle="tab"
-                    href="#giaydep"
-                    role="tab"
-                    aria-controls="giaydep"
-                    aria-selected="false"
-                    >Giày dép</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="tuixach-tab"
-                    data-toggle="tab"
-                    href="#tuixach"
-                    role="tab"
-                    aria-controls="tuixach"
-                    aria-selected="false"
-                    >Túi xách</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="daychuyen-tab"
-                    data-toggle="tab"
-                    href="#daychuyen"
-                    role="tab"
-                    aria-controls="daychuyen"
-                    aria-selected="false"
-                    >Dây chuyền</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="kieutoc-tab"
-                    data-toggle="tab"
-                    href="#kieutoc"
-                    role="tab"
-                    aria-controls="kieutoc"
-                    aria-selected="false"
-                    >Kiểu tóc</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    id="nen-tab"
-                    data-toggle="tab"
-                    href="#nen"
-                    role="tab"
-                    aria-controls="nen"
-                    aria-selected="false"
-                    >Nền</a
-                  >
-                </li>
-              </ul>
-            </div>
-            <div class="tab-content" id="myTabContent">
-              <div class="row" id="ao"></div>
-              <div class="row" id="quan"></div>
-              <div class="row" id="giaydep"></div>
-              <div class="row" id="tuixach"></div>
-              <div class="row" id="daychuyen"></div>
-              <div class="row" id="kieutoc"></div>
-              <div class="row" id="nen"></div>
+              <div
+                class="tab-pane active"
+                id="ao"
+                role="tabpanel"
+                aria-labelledby="ao-tab"
+              >
+                <!-- Grid for ao tab -->
+                <div class="row" id="noidungAo"></div>
+              </div>
+              <div
+                class="tab-pane"
+                id="quan"
+                role="tabpanel"
+                aria-labelledby="quan-tab"
+              >
+                <!-- Grid for quan tab -->
+                <div class="row" id="noidungQuan"></div>
+              </div>
+              <div
+                class="tab-pane"
+                id="giaydep"
+                role="tabpanel"
+                aria-labelledby="giaydep-tab"
+              >
+                <!-- Grid for giaydep tab -->
+                <div class="row" id="noidungGiaydep"></div>
+              </div>
+              <div
+                class="tab-pane"
+                id="tuixach"
+                role="tabpanel"
+                aria-labelledby="tuixach-tab"
+              >
+                <!-- Grid for tuixach tab -->
+                <div class="row" id="noidungTuixach"></div>
+              </div>
+              <div
+                class="tab-pane"
+                id="daychuyen"
+                role="tabpanel"
+                aria-labelledby="daychuyen-tab"
+              >
+                <!-- Grid for daychuyen tab -->
+                <div class="row" id="noidungDaychuyen"></div>
+              </div>
+              <div
+                class="tab-pane"
+                id="kieutoc"
+                role="tabpanel"
+                aria-labelledby="kieutoc-tab"
+              >
+                <!-- Grid for nen tab -->
+                <div class="row" id="noidungKieutoc"></div>
+              </div>
+              <div
+                class="tab-pane"
+                id="nen"
+                role="tabpanel"
+                aria-labelledby="nen-tab"
+              >
+                <!-- Grid for Profile tab -->
+                <div class="row" id="noidungNen"></div>
+              </div>
             </div>
           </div>
         </div>
